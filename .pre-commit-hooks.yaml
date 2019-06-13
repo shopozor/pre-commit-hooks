@@ -9,5 +9,5 @@
   description: Makes sure that no @current or @focus tags are present in the Gherkin feature files
   entry: check-feature-tags
   language: python
-  types: [feature]
+  types: [markdown]
   
