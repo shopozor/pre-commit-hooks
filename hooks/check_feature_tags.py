@@ -1,4 +1,5 @@
 import argparse
+import io
 import sys
 
 def remove_unwanted_tags(filename):
