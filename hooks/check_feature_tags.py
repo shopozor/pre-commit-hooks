@@ -2,12 +2,12 @@ import argparse
 import sys
 
 def remove_unwanted_tags(filename):
-    with open(filename, "r+") as file:
+    with open(filename, "r") as file:
         data = file.read().replace('@current', '')
-        file.write(data)
+        # file.write(data)
     
-    # with open(filename, 'w') as file:
-    #     file.write(data)
+    with open(filename, 'w') as file:
+        file.write(data)
 
 
 def main(argv=None):
