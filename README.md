@@ -1,0 +1,1 @@
+# Shopozor pre-commit hooks

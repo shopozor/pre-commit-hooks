@@ -1,0 +1,7 @@
+- id: my-test-hook
+  name: My test hook
+  description: This is just to test the mecanism
+  entry: my-test-hook
+  language: python
+  types: [python]
+  
