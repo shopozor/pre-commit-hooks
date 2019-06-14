@@ -1,9 +1,3 @@
-- id: my-test-hook
-  name: My test hook
-  description: This is just to test the mecanism
-  entry: my-test-hook
-  language: python
-  types: [python]
 - id: check-feature-tags
   name: Check feature tags
   description: Makes sure that no @current or @focus tags are present in the Gherkin feature files
