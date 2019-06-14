@@ -1,10 +1,12 @@
 import argparse
+import re
 import sys
 
 def remove_unwanted_tags(filename):
     with open(filename, "r") as file:
         data = file.read()
-        data = data.replace(r'@(current|focus)', '')
+        data = re.sub(r'@(current|focus)', '', data)
+        # data = data.replace(r'@(current|focus)', '')
         # data = data.replace('@focus', '')
     
     with open(filename, 'w') as file:
