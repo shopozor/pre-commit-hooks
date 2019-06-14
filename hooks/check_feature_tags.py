@@ -3,12 +3,12 @@ import sys
 
 def remove_unwanted_tags(filename):
     with open(filename, "r") as file:
-        data = file.read().replace('@current', '')
-        # file.write(data)
+        data = file.read()
+        data.replace('@current', '')
+        data.replace('@focus', '')
     
     with open(filename, 'w') as file:
         file.write(data)
-
 
 def main(argv=None):
     parser = argparse.ArgumentParser()
