@@ -4,10 +4,7 @@ import sys
 
 def remove_unwanted_tags(filename):
     with open(filename, "r") as file:
-        data = file.read()
-        data = re.sub(r'@(current|focus)', '', data)
-        # data = data.replace(r'@(current|focus)', '')
-        # data = data.replace('@focus', '')
+        data = re.sub(r'@(current|focus)', '', file.read())
     
     with open(filename, 'w') as file:
         file.write(data)
