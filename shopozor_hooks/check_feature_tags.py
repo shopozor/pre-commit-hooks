@@ -11,12 +11,11 @@ def remove_unwanted_tags(filename):
 
 def main(argv=None):
     parser = argparse.ArgumentParser()
-    parser.add_argument('filenames', nargs='*', help='feature filenames to check.')
+    parser.add_argument('filenames', nargs='*', help='Feature filenames to check.')
     args = parser.parse_args(argv)
 
     retval = 0
     for filename in args.filenames:
-        print('filename: ', filename)
         remove_unwanted_tags(filename)
     return retval
 

@@ -4,4 +4,9 @@
   entry: check-feature-tags
   language: python
   files: .feature$
-  
+- id: check-dos2unix
+  name: Check dos2unix
+  description: Check that dos2unix is applied
+  entry: check-dos2unix
+  language: python
+  files: .sh$
